@@ -4,7 +4,7 @@ RSpec.describe 'User Registrations', type: :request do
   describe 'POST /signup' do
     let(:valid_params) do
       {
-        user: {
+        registration: {
           first_name: 'John',
           last_name: 'Doe',
           email: 'john@example.com',
@@ -44,7 +44,7 @@ RSpec.describe 'User Registrations', type: :request do
     context 'with invalid parameters' do
       it 'returns error for missing email' do
         params = valid_params.deep_dup
-        params[:user][:email] = ''
+        params[:registration][:email] = ''
 
         post '/signup', params: params, as: :json
 
@@ -57,8 +57,8 @@ RSpec.describe 'User Registrations', type: :request do
 
       it 'returns error for short password' do
         params = valid_params.deep_dup
-        params[:user][:password] = '123'
-        params[:user][:password_confirmation] = '123'
+        params[:registration][:password] = '123'
+        params[:registration][:password_confirmation] = '123'
 
         post '/signup', params: params, as: :json
 
