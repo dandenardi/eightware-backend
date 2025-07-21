@@ -61,5 +61,5 @@ jobs:
           DEVISE_JWT_SECRET_KEY: test-secret-key
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         if: always()
