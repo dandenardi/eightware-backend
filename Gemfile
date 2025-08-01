@@ -7,7 +7,7 @@ ruby ">= 3.2.0"
 gem "dotenv-rails", groups: [:development, :test]
 gem "rails", "~> 7.2.0"
 gem "pg", "~> 1.5"
-gem "puma", "~> 6.4"
+gem "puma", "~> 6.6"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "image_processing", "~> 1.2"
 
