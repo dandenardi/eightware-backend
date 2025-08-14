@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby ">= 3.2.0"
 
 gem "dotenv-rails", groups: [:development, :test]
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 8.0.2"
 gem "pg", "~> 1.5"
 gem "puma", "~> 6.4"
 gem "bootsnap", ">= 1.4.4", require: false
